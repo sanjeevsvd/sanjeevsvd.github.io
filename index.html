@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0f1722">
+<title>Sanjeev S – Senior Platform Engineer (IAM)</title>
+<meta name="description" content="Resume of Sanjeev S, Senior Platform Engineer (IAM) in Bengaluru. SailPoint IdentityIQ, CI/CD, GitHub Actions, vulnerability management, AI automation.">
+<meta name="author" content="Sanjeev S">
+<style>
+  :root {
+    --bg: #0f1722;
+    --panel: #172233;
+    --ink: #e6edf5;
+    --muted: #93a4b8;
+    --line: #27364b;
+    --teal: #3cc8c0;
+    --amber: #f5b544;
+    --on-teal: #0f1722;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); color-scheme: dark; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .sheet { max-width: 860px; margin: 0 auto; padding: 56px 40px 72px; }
+
+  h1 { margin: 0; font-size: 2.9rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em; }
+  .role { margin: 6px 0 0; font-size: 1.2rem; font-weight: 700; color: var(--teal); }
+  .contact { margin: 12px 0 0; color: var(--muted); font-size: 0.97rem; }
+  .contact span { white-space: nowrap; }
+  .contact a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+  .contact a:hover { color: var(--teal); text-decoration-color: var(--teal); }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 4px;
+    border: 1px solid var(--teal);
+    font-weight: 700;
+    font-size: 0.93rem;
+    text-decoration: none;
+  }
+  .btn.primary { background: var(--teal); color: var(--on-teal); }
+  .btn.secondary { color: var(--teal); }
+  .btn:hover { filter: brightness(1.12); }
+  .btn.secondary:hover { background: rgba(60, 200, 192, 0.1); }
+
+  h2 {
+    margin: 44px 0 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--teal);
+  }
+  h3 { margin: 0; font-size: 1.15rem; font-weight: 700; }
+  h4 { margin: 16px 0 4px; font-size: 1.02rem; font-weight: 700; }
+  .meta { color: var(--amber); font-weight: 400; font-size: 0.93rem; }
+  p { margin: 0 0 6px; max-width: 75ch; }
+  ul { margin: 4px 0 0; padding-left: 1.2rem; }
+  li { margin: 5px 0; max-width: 75ch; }
+  li::marker { color: var(--teal); }
+  .num { color: var(--amber); font-weight: 700; }
+  .sub { color: var(--muted); }
+
+  .skills { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills li { margin: 0; padding: 4px 13px; border: 1px solid; border-radius: 999px; font-size: 0.92rem; }
+  .skills .a { color: var(--teal); border-color: rgba(60, 200, 192, 0.55); background: rgba(60, 200, 192, 0.08); }
+  .skills .b { color: var(--amber); border-color: rgba(245, 181, 68, 0.55); background: rgba(245, 181, 68, 0.08); }
+
+  .job {
+    margin: 14px 0;
+    padding: 18px 24px 20px;
+    background: var(--panel);
+    border-left: 3px solid var(--teal);
+    border-radius: 4px;
+  }
+
+  @media (max-width: 720px) {
+    .sheet { padding: 32px 18px 48px; }
+    h1 { font-size: 2.1rem; }
+    .job { padding: 16px 16px 18px; }
+    .btn { width: 100%; text-align: center; }
+  }
+
+  /* Print, shared */
+  @media print {
+    @page { size: A4; margin: 12mm 13mm; background: #fff; }
+    .actions { display: none; }
+    .sheet { max-width: none; margin: 0; padding: 0; }
+    .part { break-inside: avoid; }
+    h2, h3, h4 { break-after: avoid; }
+  }
+
+  /* Designed dark PDF: screen look, tightened for A4 */
+  @media print {
+    html.designed body { font-size: 9.6pt; line-height: 1.36; }
+    html.designed h1 { font-size: 24pt; }
+    html.designed .role { font-size: 12pt; }
+    html.designed h2 { margin: 16px 0 8px; font-size: 11.5pt; }
+    html.designed h3 { font-size: 11pt; }
+    html.designed h4 { margin: 10px 0 3px; font-size: 10pt; }
+    html.designed .meta { font-size: 9pt; }
+    html.designed li { margin: 2px 0; }
+    html.designed .skills li { padding: 2px 10px; font-size: 8.8pt; }
+    html.designed .job { margin: 10px 0; padding: 12px 16px 14px; }
+    html.designed .contact { font-size: 9.2pt; }
+  }
+
+  /* Plain ATS PDF: no colors, panels or pills */
+  @media print {
+    html:not(.designed) { color-scheme: light; }
+    html:not(.designed), html:not(.designed) body { background: #fff; color: #000; }
+    html:not(.designed) body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 1.38; }
+    html:not(.designed) h1 { font-size: 22pt; letter-spacing: 0; }
+    html:not(.designed) .role { font-size: 12pt; color: #000; }
+    html:not(.designed) .contact { color: #333; font-size: 10pt; }
+    html:not(.designed) .contact a { color: inherit; text-decoration: none; }
+    html:not(.designed) h2 { margin: 14px 0 8px; font-size: 11.5pt; color: #000; border-bottom-color: #999; }
+    html:not(.designed) h3 { margin: 0 0 2px; font-size: 11pt; }
+    html:not(.designed) h4 { margin: 8px 0 3px; font-size: 10pt; }
+    html:not(.designed) .meta { color: #333; font-size: inherit; }
+    html:not(.designed) .num { color: #000; font-weight: 400; }
+    html:not(.designed) li { margin: 2px 0; }
+    html:not(.designed) li::marker { color: #000; }
+    html:not(.designed) .job { background: none; border: 0; border-radius: 0; padding: 0; margin: 12px 0 0; }
+    html:not(.designed) .skills { display: block; }
+    html:not(.designed) .skills li { display: inline; padding: 0; margin: 0; border: 0; border-radius: 0; background: none; color: #000; font-size: inherit; }
+    html:not(.designed) .skills li:not(:last-child)::after { content: ", "; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header>
+    <h1>Sanjeev S</h1>
+    <p class="role">Senior Platform Engineer (IAM)</p>
+    <p class="contact">
+      <span>Bengaluru, India</span> | <span>Phone: <a href="tel:+919633543361">+91 9633543361</a></span> | <span>Email: <a href="mailto:sanjeevsivadas7@gmail.com">sanjeevsivadas7@gmail.com</a></span> | <span>LinkedIn: <a href="https://www.linkedin.com/in/sanjeevsvd">linkedin.com/in/sanjeevsvd</a></span>
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="Sanjeev_S_IAM_Engineer_CV_Designed.pdf" download>Download PDF</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Senior Platform Engineer with 10 years across IT infrastructure and Identity &amp; Access Management (IAM), specialising in SailPoint IdentityIQ. Leads CI/CD modernisation, large-scale vulnerability reduction and automation across production and non-production environments, and keeps identity data accurate for downstream systems and leadership dashboards.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li class="a">SailPoint</li>
+      <li class="a">Windows</li>
+      <li class="a">Linux</li>
+      <li class="a">ServiceNow</li>
+      <li class="a">MySQL</li>
+      <li class="a">AppDynamics</li>
+      <li class="a">Splunk</li>
+      <li class="b">GitHub</li>
+      <li class="b">GitHub Actions</li>
+      <li class="b">Octopus</li>
+      <li class="b">Confluence</li>
+      <li class="b">JIRA</li>
+      <li class="b">Zephyr</li>
+      <li class="b">Claude</li>
+      <li class="b">Codex</li>
+      <li class="b">AI automation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+
+    <article class="job">
+      <h3>Commonwealth Bank of Australia <span class="meta">| Jan 2022 – Present</span></h3>
+
+      <div class="part">
+        <h4>Senior Platform Engineer <span class="meta">| Feb 2026 – Present</span></h4>
+        <ul>
+          <li>Led the migration of the SailPoint CI/CD pipeline from <span class="num">TeamCity to GitHub Actions</span> across <span class="num">8 repositories</span>, reducing build time by <span class="num">70%</span></li>
+          <li>Helped reduce <span class="num">5,000+</span> vulnerabilities across <span class="num">120 servers</span> in all SailPoint production and non-production environments</li>
+          <li>Built automation via the CI/CD pipeline to remediate the <span class="num">HTTPS header vulnerability in Tomcat</span></li>
+          <li>Enhanced the <span class="num">Joiner-Mover-Leaver (JML)</span> process by enabling attribute sync between the authoritative source and critical downstream systems such as AD and LDAP</li>
+          <li>Enabled automated extraction of SailPoint data from the <span class="num">IdentityIQ database</span> so enterprise data products can build <span class="num">identity dashboards</span> for leadership</li>
+          <li>Built <span class="num">Claude and Codex skills</span> that automate Jira ticket creation and updates, Confluence documentation writing and editing, and Zephyr test case writing</li>
+        </ul>
+      </div>
+
+      <div class="part">
+        <h4>Cyber Operations Engineer <span class="meta">| Jan 2022 – Jan 2026</span></h4>
+        <ul>
+          <li>Handling SailPoint incidents, service requests and running <span class="num">IAM MERT</span> activities</li>
+          <li>Creating SQL queries for extracting custom reports for the business</li>
+          <li>Certification renewal activities for IIQ UI servers, IQ Service servers and RACF Connector Gateway servers for all environments</li>
+          <li>Monitoring regular server health checks via AppDynamics</li>
+          <li>Identifying and raising problem tickets with IAM developers/vendors and following up for closure</li>
+          <li>Managing secrets for all application integrations from the SailPoint side</li>
+          <li>Participated in the SailPoint upgrade from <span class="num">8.1 to 8.3P3</span></li>
+          <li>Application onboarding, enhancements and platform build deployments via CI/CD pipeline</li>
+          <li>Approving and merging GitHub branches after deployment</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="part">
+        <h3>IAM L2 Analyst, SailPoint – HCL Technologies <span class="meta">| Jan 2019 – Jan 2022</span></h3>
+        <ul>
+          <li>Monitoring daily failures (LCM, Task)</li>
+          <li>Writing test steps for enhancements and application onboarding</li>
+          <li>Testing new applications and documenting through HP-ALM</li>
+          <li>Manual testing and documenting of enhancements for Jira items</li>
+          <li>Creation of workgroups and roles, and testing in UAT</li>
+          <li>Data validation after onboarding applications</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="part">
+        <h3>System Administrator – Tata Consultancy Services <span class="meta">| Jul 2016 – Dec 2018</span></h3>
+        <ul>
+          <li>Identified, reported, coordinated and resolved network security and server issues</li>
+          <li>Coordinated with Server, Network, Firewall and Antivirus teams after identifying root cause of issues, and resolved them</li>
+          <li>L1 support for all desktop and printer issues, supporting approx. 40,000 employees at the TCS Chennai location</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Application</strong> – Nehru Group of Institutions, Coimbatore <span class="meta">| May 2016</span></p>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>SailPoint Certified IIQ Associate</li>
+      <li>AWS Certified Cloud Practitioner</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
